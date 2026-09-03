@@ -76,3 +76,34 @@ Los wireframes del proyecto representan las principales pantallas de este proces
 ## Objetivo
 
 El objetivo del proyecto es desarrollar una aplicación sencilla y organizada que mejore la experiencia de las clientas al reservar sus citas y facilite la gestión de la agenda del emprendimiento.
+
+
+## Progreso del proyecto – Módulo 2
+
+Durante el módulo 2 se incorporaron nuevos conceptos que permitirán comenzar a desarrollar y organizar la aplicación de gestión de turnos.
+
+### Estructura de la aplicación
+
+La aplicación estará organizada mediante diferentes pantallas y componentes de Android. Una Activity podrá utilizarse para representar una pantalla principal de la aplicación, mientras que los Fragments podrán utilizarse para organizar y reutilizar diferentes partes de la interfaz.
+
+El recorrido principal de la aplicación continuará siendo:
+
+Inicio → Servicio → Profesional → Fecha y horario → Próximos turnos → Frecuencia → Resumen → Confirmación.
+
+También se podrán utilizar Intents para permitir la comunicación y navegación entre diferentes componentes de la aplicación.
+
+### Uso de la nube
+
+La computación en la nube podrá utilizarse para almacenar y mantener actualizada la información relacionada con los turnos. Esto permitirá que las clientas consulten la disponibilidad y realicen reservas mientras que la administradora podrá acceder a la información actualizada de la agenda.
+
+En etapas posteriores del proyecto se evaluará la incorporación de servicios en la nube para funciones como almacenamiento de datos, autenticación de usuarios y notificaciones.
+
+### Herramientas de desarrollo
+
+Para continuar con el desarrollo del proyecto se utilizará Android Studio como entorno de desarrollo y el Android SDK como conjunto de herramientas para crear y probar la aplicación.
+
+Git y GitHub se utilizarán para llevar un control de las diferentes versiones del proyecto, registrar los cambios realizados y publicar los avances del código y de la documentación.
+
+### Próximos pasos
+
+Los próximos pasos del proyecto serán comenzar a desarrollar la estructura básica de la aplicación en Android Studio, crear las primeras pantallas y continuar actualizando el código y la documentación en GitHub a medida que avance el proyecto.
