@@ -107,3 +107,69 @@ Git y GitHub se utilizarán para llevar un control de las diferentes versiones d
 ### Próximos pasos
 
 Los próximos pasos del proyecto serán comenzar a desarrollar la estructura básica de la aplicación en Android Studio, crear las primeras pantallas y continuar actualizando el código y la documentación en GitHub a medida que avance el proyecto.
+
+## Progreso del proyecto – Módulo 5
+
+Durante este módulo se continuó avanzando en la planificación de la aplicación de gestión de turnos, incorporando conceptos relacionados con el almacenamiento y la administración de datos en Android.
+
+A partir de los wireframes desarrollados anteriormente, se analizó qué información necesitará almacenar la aplicación para que las diferentes pantallas puedan funcionar correctamente. Entre estos datos se encuentran las fechas, horarios, servicios y reservas realizadas por las clientas.
+
+### Almacenamiento y base de datos
+
+Para administrar la información de la aplicación se incorporaron conceptos relacionados con SQLite y las bases de datos en Android.
+
+La base de datos permitirá almacenar información de los turnos para que pueda ser consultada, modificada o eliminada cuando sea necesario.
+
+Por ejemplo, cuando una clienta seleccione una fecha, un horario y un servicio, la aplicación deberá procesar esa información y almacenarla para poder mostrar posteriormente las reservas realizadas.
+
+El flujo general será:
+
+Interfaz de la aplicación → Selección del turno → Procesamiento de los datos → Almacenamiento → Consulta de la información.
+
+### Relación con los wireframes
+
+Los wireframes realizados anteriormente permiten visualizar las principales pantallas y acciones de la aplicación. En este módulo se relacionaron esas pantallas con los datos necesarios para su funcionamiento.
+
+Por ejemplo:
+
+Pantalla de calendario → Selección de fecha y horario → Agregar turno → Almacenamiento de la reserva → Pantalla de confirmación.
+
+De esta manera, el diseño de la interfaz y el almacenamiento de datos se integran dentro del desarrollo de la aplicación.
+
+### Git y GitHub
+
+Git y GitHub continuarán utilizándose para registrar y publicar los avances realizados durante el desarrollo del proyecto.
+
+Git permite mantener un historial de los cambios realizados, mientras que GitHub permite almacenar y compartir el repositorio del proyecto. A medida que se incorporen nuevas funciones, los cambios podrán registrarse mediante commits y posteriormente enviarse al repositorio remoto mediante push.
+
+## Changelog – Registro de cambios
+
+### Cambios pasados
+
+- Definición del problema y del objetivo de la aplicación.
+- Diseño de la solución para permitir la reserva de múltiples turnos.
+- Definición de las principales funciones para clientas y administradora.
+- Organización del flujo principal de navegación.
+- Desarrollo de los wireframes de las principales pantallas.
+- Incorporación de conceptos de Activities, Fragments e Intents.
+- Análisis del posible uso de servicios en la nube.
+- Incorporación de Android Studio, Android SDK, Git y GitHub como herramientas del proyecto.
+
+### Cambios actuales – Módulo 5
+
+- Relación de los wireframes con los datos necesarios para la aplicación.
+- Incorporación de conceptos de almacenamiento y bases de datos.
+- Planificación del almacenamiento de fechas, horarios, servicios y reservas.
+- Análisis del uso de SQLite para administrar información estructurada.
+- Actualización de la documentación del proyecto.
+- Uso de Git y GitHub para registrar y publicar los avances realizados.
+
+### Cambios futuros
+
+- Continuar desarrollando la estructura de la aplicación en Android Studio.
+- Implementar el almacenamiento y recuperación de los turnos.
+- Desarrollar la funcionalidad para reservar múltiples turnos.
+- Incorporar la consulta y cancelación de reservas.
+- Realizar pruebas y corregir posibles errores.
+- Continuar actualizando el código y la documentación en GitHub.
+- Preparar la versión final de la aplicación para el Módulo 8.
