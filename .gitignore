@@ -1,0 +1,23 @@
+# Archivos generados por Gradle
+.gradle/
+**/build/
+.kotlin/
+
+# Configuración local
+local.properties
+
+# Archivos de Android Studio
+.idea/
+*.iml
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Capturas de memoria
+*.hprof
