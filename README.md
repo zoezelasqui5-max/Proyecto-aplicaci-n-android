@@ -2,68 +2,145 @@
 
 ## Descripción del proyecto
 
-Este proyecto consiste en el desarrollo de una aplicación Android destinada a la gestión y reserva de turnos para servicios de manicura.
+AgendaDeTurnos es una aplicación móvil desarrollada para dispositivos Android, orientada a la gestión y reserva de turnos para servicios de manicura.
 
-La aplicación estará dirigida tanto a las clientas como a la administradora del emprendimiento y tendrá como objetivo simplificar el proceso de reserva y organización de las citas.
+El proyecto surge de la necesidad de simplificar la organización de citas, especialmente para aquellas clientas que realizan servicios periódicos y necesitan programar varias reservas futuras.
+
+La aplicación fue desarrollada utilizando Android Studio y el lenguaje de programación Kotlin. Permite registrar turnos individuales, programar reservas recurrentes, consultar las citas almacenadas y cancelar reservas. Además, incorpora mecanismos de validación de disponibilidad para evitar la superposición de turnos.
+
+El desarrollo se realizó de manera progresiva durante los diferentes módulos de la asignatura, integrando conceptos de diseño de interfaces, programación de eventos, almacenamiento de información y control de versiones mediante Git y GitHub.
 
 ## Problema identificado
 
-Actualmente, cuando una clienta desea reservar varios turnos futuros debe realizar cada reserva de manera individual. Después de confirmar un turno, debe comenzar nuevamente el proceso y calcular manualmente cuándo debería realizarse su próxima cita.
+Actualmente, muchas plataformas de reserva de turnos permiten seleccionar una única cita por operación. Cuando una clienta necesita programar varios turnos futuros, debe repetir el procedimiento de reserva y calcular manualmente las fechas correspondientes.
 
-Esto puede resultar repetitivo y poco práctico para las clientas que realizan sus servicios periódicamente.
+Esta situación resulta poco práctica para los servicios de manicura, ya que las clientas suelen realizarse tratamientos de manera periódica.
+
+Además, la organización manual de las reservas puede generar dificultades para controlar la disponibilidad de los horarios y evitar superposiciones.
 
 ## Solución propuesta
 
-La aplicación incorporará una función de reserva de múltiples turnos.
+Para resolver esta problemática, se desarrolló AgendaDeTurnos, una aplicación Android que permite gestionar reservas individuales y recurrentes.
 
-Después de seleccionar la primera cita, la clienta podrá elegir si desea reservar próximos turnos y establecer una frecuencia, por ejemplo:
+La aplicación incorpora las siguientes funcionalidades:
 
-- Cada 15 días
-- Cada 20 días
-- Cada 30 días
+Reserva individual: permite seleccionar un servicio, una fecha y un horario para registrar una cita.
+Reserva recurrente: permite programar varios turnos futuros a partir de una frecuencia determinada.
+Validación de disponibilidad: comprueba que los horarios seleccionados estén disponibles antes de registrar una reserva.
+Consulta de turnos: permite visualizar las citas previamente registradas.
+Cancelación de reservas: permite eliminar turnos que ya no se desean mantener.
+Almacenamiento persistente: conserva la información de las reservas para poder consultarla posteriormente.
 
-La aplicación calculará las próximas fechas y permitirá consultar los horarios disponibles para reservar varias citas dentro del mismo proceso.
+De esta manera, la aplicación simplifica la organización de los turnos y reduce la necesidad de repetir manualmente el proceso de reserva.
 
 ## Plataforma
 
-La aplicación estará diseñada inicialmente para dispositivos Android.
+AgendaDeTurnos es una aplicación móvil desarrollada para dispositivos con sistema operativo Android.
 
-Durante el desarrollo del proyecto se utilizarán:
+Para su desarrollo se utilizaron las siguientes tecnologías y herramientas:
 
-- Android
-- MIT App Inventor
-- Android Studio
-- GitHub
+- **Android Studio:** entorno de desarrollo integrado utilizado para crear, ejecutar y probar la aplicación.
+- **Kotlin:** lenguaje de programación empleado para implementar la lógica y las funcionalidades.
+- **XML:** lenguaje utilizado para definir el diseño de las interfaces.
+- **Android SDK:** conjunto de herramientas necesarias para desarrollar aplicaciones Android.
+- **Gradle:** sistema utilizado para configurar y compilar el proyecto.
+- **Git:** herramienta de control de versiones que permite registrar los cambios realizados.
+- **GitHub:** plataforma utilizada para almacenar el código fuente y documentar el desarrollo del proyecto.
+
+La aplicación fue ejecutada y probada mediante un emulador de Android Studio. También se verificó su compilación mediante Gradle, obteniendo el resultado BUILD SUCCESSFUL.
 
 ## Interfaz de usuario
 
-Las clientas podrán:
+## Interfaz de usuario
 
-- Consultar los servicios disponibles.
-- Visualizar precios y duración.
-- Seleccionar una profesional.
-- Consultar fechas y horarios disponibles.
-- Reservar un turno.
-- Reservar varios turnos futuros.
-- Consultar sus próximas citas.
-- Cancelar turnos.
+La interfaz de AgendaDeTurnos fue diseñada para ofrecer una experiencia sencilla, organizada e intuitiva.
+
+La aplicación cuenta con diferentes pantallas que permiten acceder a las funcionalidades principales.
+
+### Funcionalidades disponibles
+
+- **Pantalla principal:** permite acceder a las opciones de gestión de turnos.
+- **Agregar turno:** permite registrar una nueva reserva seleccionando el servicio, la fecha y el horario.
+- **Turnos recurrentes:** permite programar varias reservas futuras de manera automática.
+- **Mis turnos:** permite consultar las reservas registradas.
+- **Cancelar turno:** permite eliminar una reserva existente.
+- **Validación de disponibilidad:** comprueba que los turnos solicitados no se superpongan con otras reservas.
+
+### Servicios de manicura
+
+La aplicación contempla los siguientes servicios:
+
+- Semipermanente: 30 minutos.
+- Kapping: 60 minutos.
+- Esculpidas: 120 minutos.
+- Retiro de esmalte: 15 minutos.
+
+La duración de cada servicio se utiliza para comprobar la disponibilidad de los horarios y evitar superposiciones entre reservas.
+
+### Horarios de atención
+
+Los horarios configurados en la aplicación son:
+
+- Lunes a viernes: de 10:00 a 16:00.
+- Sábados: de 10:00 a 12:00.
+
+Estos horarios se consideran durante el proceso de validación de las reservas.
 
 ## Interfaz de administrador
 
-La administradora podrá:
+AgendaDeTurnos fue diseñada considerando las necesidades de organización de un emprendimiento de manicura.
 
-- Consultar la agenda.
-- Visualizar las reservas.
-- Administrar servicios y precios.
-- Configurar horarios disponibles.
-- Bloquear fechas u horarios.
-- Gestionar los turnos de las clientas.
+En la versión desarrollada, la gestión de las reservas se realiza mediante las siguientes funcionalidades:
+
+- Registro de nuevos turnos.
+- Consulta de las reservas almacenadas.
+- Cancelación de turnos existentes.
+- Verificación de disponibilidad de fechas y horarios.
+- Control de la duración de los servicios.
+- Validación de los horarios de atención establecidos.
+
+Estas funciones permiten organizar las citas y reducir los conflictos entre reservas.
+
+### Funcionalidades previstas para futuras versiones
+
+Como posibles mejoras del proyecto, se contempla incorporar:
+
+- Un panel de administración independiente.
+- Modificación de servicios y precios desde la aplicación.
+- Configuración personalizada de horarios de atención.
+- Bloqueo manual de fechas y horarios.
+- Gestión de múltiples profesionales.
+- Autenticación de usuarios.
+
+Estas características forman parte de la planificación futura y no de la versión implementada.
 
 ## Funcionalidad principal
 
-La característica principal del proyecto será la posibilidad de reservar múltiples turnos sin repetir todo el proceso.
+La funcionalidad principal de AgendaDeTurnos es la gestión de reservas individuales y recurrentes para servicios de manicura.
 
-Por ejemplo, si una clienta reserva una cita y desea regresar cada 15 días, la aplicación podrá calcular las próximas fechas y mostrar la disponibilidad correspondiente.
+### Reserva individual
+
+La aplicación permite registrar una cita mediante la selección de un servicio, una fecha y un horario.
+
+Antes de guardar el turno, se verifica que la reserva se encuentre dentro de los horarios de atención y que no exista una superposición con otras citas registradas.
+
+### Reserva recurrente
+
+La aplicación permite programar turnos futuros a partir de una frecuencia determinada.
+
+Esta funcionalidad está orientada a las clientas que realizan servicios periódicos y necesitan organizar sus próximas citas sin repetir manualmente todo el procedimiento.
+
+El sistema calcula las fechas correspondientes y comprueba la disponibilidad de los horarios solicitados.
+
+### Consulta y cancelación de turnos
+
+Las reservas registradas pueden visualizarse desde la sección "Mis turnos".
+
+Además, la aplicación permite cancelar citas existentes, facilitando la organización de la agenda.
+
+### Persistencia de datos
+
+La información de las reservas se conserva mediante un mecanismo de almacenamiento local, lo que permite recuperar los turnos registrados al volver a utilizar la aplicación.
 
 ## Diseño
 
@@ -75,8 +152,45 @@ Los wireframes del proyecto representan las principales pantallas de este proces
 
 ## Objetivo
 
-El objetivo del proyecto es desarrollar una aplicación sencilla y organizada que mejore la experiencia de las clientas al reservar sus citas y facilite la gestión de la agenda del emprendimiento.
+El objetivo general de AgendaDeTurnos es desarrollar una aplicación Android que facilite la gestión de reservas para un emprendimiento de manicura, optimizando la organización de las citas y simplificando el proceso de selección de turnos.
 
+### Objetivos específicos
+
+- Desarrollar una interfaz sencilla e intuitiva.
+- Implementar el registro de reservas individuales.
+- Incorporar la programación de turnos recurrentes.
+- Validar la disponibilidad de fechas y horarios.
+- Evitar superposiciones entre reservas.
+- Permitir la consulta y cancelación de turnos.
+- Conservar la información de las reservas mediante almacenamiento local.
+- Aplicar los conocimientos adquiridos durante la asignatura de desarrollo de aplicaciones Android.
+- Documentar el proceso de desarrollo mediante Git y GitHub.
+
+El proyecto permitió integrar conocimientos de programación, diseño de interfaces, gestión de datos y control de versiones en una aplicación funcional.
+
+### Estructura de navegación
+
+La aplicación se organiza mediante las siguientes pantallas:
+
+1. **Pantalla principal:** permite acceder a las funcionalidades disponibles.
+2. **Agregar turno:** permite seleccionar un servicio, una fecha y un horario para registrar una reserva.
+3. **Turnos recurrentes:** permite programar varias citas futuras.
+4. **Mis turnos:** permite consultar las reservas almacenadas y cancelar turnos existentes.
+
+### Componentes de la interfaz
+
+Durante el desarrollo se utilizaron componentes visuales de Android para permitir la interacción con la aplicación.
+
+Entre ellos se encuentran:
+
+- TextView: presentación de textos e información.
+- Button: ejecución de acciones mediante botones.
+- LinearLayout: organización de los elementos visuales.
+- Componentes de selección de fechas y horarios.
+
+La navegación entre pantallas se implementó mediante Activities e Intents.
+
+Los wireframes originales y los avances del diseño se encuentran documentados en la Wiki del repositorio.
 
 ## Progreso del proyecto – Módulo 2
 
@@ -144,32 +258,53 @@ Git permite mantener un historial de los cambios realizados, mientras que GitHub
 
 ## Changelog – Registro de cambios
 
-### Cambios pasados
+El siguiente registro documenta la evolución del proyecto AgendaDeTurnos desde su planificación inicial hasta la implementación y prueba de sus funcionalidades principales.
 
-- Definición del problema y del objetivo de la aplicación.
-- Diseño de la solución para permitir la reserva de múltiples turnos.
-- Definición de las principales funciones para clientas y administradora.
-- Organización del flujo principal de navegación.
-- Desarrollo de los wireframes de las principales pantallas.
-- Incorporación de conceptos de Activities, Fragments e Intents.
-- Análisis del posible uso de servicios en la nube.
-- Incorporación de Android Studio, Android SDK, Git y GitHub como herramientas del proyecto.
+### Cambios pasados – Módulos 1 al 5
 
-### Cambios actuales – Módulo 5
+- Identificación del problema relacionado con la reserva individual de turnos.
+- Definición de los objetivos y la solución propuesta.
+- Planificación de las funcionalidades para clientas y administradora.
+- Elaboración de los wireframes de las principales pantallas.
+- Organización del flujo de navegación.
+- Investigación sobre Activities, Fragments e Intents.
+- Análisis de alternativas de almacenamiento de información.
+- Incorporación de Android Studio como entorno de desarrollo.
+- Creación del repositorio en GitHub.
+- Publicación de la documentación inicial y los avances del proyecto.
 
-- Relación de los wireframes con los datos necesarios para la aplicación.
-- Incorporación de conceptos de almacenamiento y bases de datos.
-- Planificación del almacenamiento de fechas, horarios, servicios y reservas.
-- Análisis del uso de SQLite para administrar información estructurada.
-- Actualización de la documentación del proyecto.
-- Uso de Git y GitHub para registrar y publicar los avances realizados.
+### Cambios de desarrollo – Módulos 6 y 7
 
-### Cambios futuros
+- Desarrollo de la estructura de la aplicación en Android Studio.
+- Implementación de las pantallas principales mediante Kotlin y XML.
+- Incorporación de la navegación entre Activities.
+- Desarrollo del formulario para registrar turnos.
+- Configuración de los servicios de manicura y sus respectivas duraciones.
+- Implementación de la lógica de disponibilidad.
+- Incorporación de la programación de reservas recurrentes.
+- Implementación del almacenamiento local de los turnos.
+- Desarrollo de la pantalla para consultar las reservas.
+- Incorporación de la funcionalidad para cancelar turnos.
 
-- Continuar desarrollando la estructura de la aplicación en Android Studio.
-- Implementar el almacenamiento y recuperación de los turnos.
-- Desarrollar la funcionalidad para reservar múltiples turnos.
-- Incorporar la consulta y cancelación de reservas.
-- Realizar pruebas y corregir posibles errores.
-- Continuar actualizando el código y la documentación en GitHub.
-- Preparar la versión final de la aplicación para el Módulo 8.
+### Cambios actuales – Versión final
+
+- Integración de las funcionalidades principales de AgendaDeTurnos.
+- Verificación de los horarios de atención.
+- Validación de la disponibilidad para evitar superposiciones.
+- Pruebas de registro, consulta y cancelación de reservas.
+- Pruebas de funcionamiento mediante el emulador de Android Studio.
+- Compilación satisfactoria del proyecto mediante Gradle (BUILD SUCCESSFUL).
+- Actualización del código fuente en GitHub.
+- Integración de los cambios en la rama principal main.
+- Actualización del README con la descripción de las funcionalidades implementadas.
+
+### Cambios futuros – Posibles mejoras
+
+- Incorporar un sistema de autenticación de usuarios.
+- Desarrollar un panel de administración independiente.
+- Permitir la modificación de servicios y precios desde la aplicación.
+- Incorporar la configuración personalizada de horarios.
+- Agregar notificaciones y recordatorios automáticos.
+- Evaluar la sincronización de reservas mediante servicios en la nube.
+- Incorporar la gestión de múltiples profesionales.
+- Mejorar la interfaz visual y la experiencia de usuario.
