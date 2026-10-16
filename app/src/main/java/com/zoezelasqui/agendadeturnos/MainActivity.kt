@@ -21,21 +21,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-            btnMisTurnos.setOnClickListener {
-                Toast.makeText(
-                    this,
-                    "Consultar mis turnos",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
+        btnMisTurnos.setOnClickListener {
+            val intent = Intent(this, MisTurnosActivity::class.java)
+            startActivity(intent)
+        }
+        btnTurnosRecurrentes.setOnClickListener {
+            val intent = Intent(this, TurnosRecurrentesActivity::class.java)
+            startActivity(intent)
+        }
 
-            btnTurnosRecurrentes.setOnClickListener {
-                Toast.makeText(
-                    this,
-                    "Reservar varios turnos",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
         }
 
     }

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reservar varios turnos"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etNombreRecurrente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la clienta"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/spServicioRecurrente"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/servicios" />
+
+        <EditText
+            android:id="@+id/etFechaRecurrente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha del primer turno"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <EditText
+            android:id="@+id/etHoraRecurrente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horario"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <EditText
+            android:id="@+id/etIntervalo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repetir cada cuántos días (ej. 15)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etCantidadTurnos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad de turnos (ej. 4)"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnConfirmarRecurrentes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar reservas"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>

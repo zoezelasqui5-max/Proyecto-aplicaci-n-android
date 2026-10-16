@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Agenda de turnos</string>
+    <string-array name="servicios">
+        <item>Seleccionar servicio</item>
+        <item>Semipermanente</item>
+        <item>Kapping</item>
+        <item>Esculpidas</item>
+        <item>Retiro de esmalte</item>
+    </string-array>
 </resources>
